@@ -1,0 +1,12 @@
+def parser_add_data_arguments(parser):
+    # parser.add_argument('--seed', default=42, type=int)
+    # parser.add_argument('--checkpoint', default='')
+    # parser.add_argument('--evaluate', default=False, action='store_true')
+    # parser.add_argument('--resume', default=False, action='store_true')
+    parser.add_argument('--text_encoder', default='bert-base-uncased')
+    # parser.add_argument('--device', default='cuda')
+    # parser.add_argument('--world_size', default=1, type=int, help="number of distributed processes")
+    # parser.add_argument('--dist_url', default='env://', help="url used to set up distributed training")
+    parser.add_argument('--original_ckpt', default='./output/ALBEF_4M.pth')
+    parser.add_argument('--low_rank_ckpt', default='./output/low_rank.pth')
+    parser.add_argument('--name_omit', default=['cls', '_proj'])

@@ -1,0 +1,37 @@
+train_file: [
+  '/temp/vl-dataset/json_downstream/grounding/refcoco+_train.json']
+test_file: [
+  '/temp/vl-dataset/json_downstream/grounding/refcoco+_val.json',
+  '/temp/vl-dataset/json_downstream/grounding/refcoco+_test.json'
+  ]
+
+refcoco_data: '/temp/vl-dataset/json_downstream/grounding/'
+det_file: '/temp/vl-dataset/json_downstream/grounding/refcoco+/dets.json'
+coco_file: '/temp/vl-dataset/json_downstream/grounding/refcoco+/cocos.json'
+
+image_root: '/temp/vl-dataset/common-images/mscoco/'
+
+bert_config: 'configs/config_bert.json'
+
+image_res: 384
+batch_size: 16 # 32
+
+queue_size: 65536
+momentum: 0.995
+vision_width: 768
+embed_dim: 256
+temp: 0.07
+
+alpha: 0.4
+distill: True
+warm_up: True
+
+optimizer: {opt: adamW, lr: 1e-5, weight_decay: 0.02}
+schedular: {sched: cosine, lr: 1e-5, epochs: 5000, min_lr: 1e-6, decay_rate: 1, warmup_lr: 1e-5, warmup_epochs: 1, cooldown_epochs: 0}
+
+
+
+
+
+
+
