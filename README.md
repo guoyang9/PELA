@@ -1,5 +1,4 @@
-# PELA
-PELA: Learning Parameter-Efficient Models with Low-Rank Approximation
+# PELA: Learning Parameter-Efficient Models with Low-Rank Approximation
 
 #### Code contribution: Yangyang Guo ALBEF and Guangzhi Wang DeiT and Swin.
 

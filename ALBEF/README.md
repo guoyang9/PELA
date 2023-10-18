@@ -5,8 +5,6 @@ We sincerely appreciate the Junnan' generous sharing and great contribution!
 
 #### Most of the settings follow ALBEF except for the decreased batch-size due to resource constraints.
 
-![model structure](/imgs/model.png)
-
 ### Requirements:
 * pytorch 1.8.0
 * transformers 4.8.1
@@ -41,26 +39,26 @@ You can easily find them on every downstream scripts.
 
 All the downstream tutorial can be found at ALBEF, we simply copy them here.
 #### Fine-tuning VQA
-      ```
-      OMP_NUM_THREADS=1 python -m torch.distributed.launch --nproc_per_node=4 --use_env VQA.py
-      ```
+```
+OMP_NUM_THREADS=1 python -m torch.distributed.launch --nproc_per_node=4 --use_env VQA.py
+```
 #### Fine-tuning Visual Entailment
-      ```
-      OMP_NUM_THREADS=1 python -m torch.distributed.launch --nproc_per_node=4 --use_env VE.py
-      ```
+```
+OMP_NUM_THREADS=1 python -m torch.distributed.launch --nproc_per_node=4 --use_env VE.py
+```
 #### Fine-tuning Retrieval@Flickr30K
-      ```
-      OMP_NUM_THREADS=1 python -m torch.distributed.launch --nproc_per_node=4 --use_env Retrieval.py
-      ```
+```
+OMP_NUM_THREADS=1 python -m torch.distributed.launch --nproc_per_node=4 --use_env Retrieval.py
+```
 #### Fine-tuning Retrieval@MSCOCO
-      ```
-      OMP_NUM_THREADS=1 python -m torch.distributed.launch --nproc_per_node=4 --use_env Retrieval.py \
-      --config ./configs/Retrieval_flickr.yaml \
-      ```
+```
+OMP_NUM_THREADS=1 python -m torch.distributed.launch --nproc_per_node=4 --use_env Retrieval.py \
+--config ./configs/Retrieval_flickr.yaml \
+```
 #### Fine-tuning Visual Grounding on RefCOCO+
-      ```
-      OMP_NUM_THREADS=1 python -m torch.distributed.launch --nproc_per_node=4 --use_env Grounding.py
-      ```
+```
+OMP_NUM_THREADS=1 python -m torch.distributed.launch --nproc_per_node=4 --use_env Grounding.py
+```
 
 <!-- ### Citation
 If you find this code to be useful for your research, please consider citing.
