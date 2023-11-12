@@ -1,5 +1,7 @@
 # PELA: Learning Parameter-Efficient Models with Low-Rank Approximation
 
+[[paper](https://arxiv.org/abs/2310.10700)] on arXiv
+
 #### Code contribution: Yangyang Guo ALBEF and Guangzhi Wang DeiT and Swin.
 
 #### Detailed configuration of each model can be found on each model directory.
