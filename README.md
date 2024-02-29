@@ -1,8 +1,10 @@
-# PELA: Learning Parameter-Efficient Models with Low-Rank Approximation
+# PELA: Learning Parameter-Efficient Models with Low-Rank Approximation [CVPR 2024]
 
 [![arxiv](https://img.shields.io/badge/paper-Arxiv-blue.svg)](https://arxiv.org/abs/2310.10700)
 
-#### Code contribution: Yangyang Guo ALBEF and Guangzhi Wang DeiT and Swin.
+#### Code contribution: 
+- Yangyang Guo -- ALBEF
+- Guangzhi Wang -- DeiT and Swin.
 
 #### Detailed configuration of each model can be found on each model directory.
 
@@ -15,11 +17,11 @@
 ### Acknowledgement
 If you found this repo helpful, please consider cite the following paper:
 ```python
-@misc{pela,
-      title={PELA: Learning Parameter-Efficient Models with Low-Rank Approximation}, 
-      author={Yangyang Guo and Guangzhi Wang and Mohan Kankanhalli},
-      year={2023},
-      eprint={2310.10700},
+@inproceedings{pela,
+  author       = {Yangyang Guo and Guangzhi Wang and Mohan Kankanhalli},
+  title        = {PELA: Learning Parameter-Efficient Models with Low-Rank Approximation},
+  booktitle    = {CVPR},
+  year         = {2024}
 }
 ```
 
