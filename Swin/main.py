@@ -121,7 +121,7 @@ def main(config):
     model_t = deepcopy(model)
     print("compression ratio:", args.compression_ratio)
     module_lr = low_rank.ModuleLowRank(compress_ratio=args.compression_ratio,
-                                       name_omit=['norm', 'head', 'patch_embed', 'downsample', 'attn.proj'],                           ,
+                                       name_omit=['norm', 'head', 'patch_embed', 'downsample', 'attn.proj'],
                                        is_approximate=True)
     model = module_lr(model)
 
